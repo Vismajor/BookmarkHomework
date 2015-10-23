@@ -1,0 +1,136 @@
+body {
+    background-color: #dedede;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.center{
+    display: block;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+h2{
+    color: #80A8A8;
+}
+form {
+    width: 100%;
+    background-color: #FF0D51;
+    padding: 30px 0;
+}
+form.delete_form{
+    text-align: center;
+}
+.hbox {
+    margin: 0 auto;
+    max-width: 48em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hbox >* {
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: .9em;
+}
+
+input {
+    margin-right: 10px;
+    padding: 10px;
+    width: 85%;
+}
+
+button {
+    border:0;
+    padding: 11px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+ul {
+    box-shadow: 0 10px 10px #cdcdcd;
+    max-width: 48em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    padding: 20px;
+    position: relative;
+    background-color: #f7f7f7; 
+    border-bottom: 1px solid #efefef;
+    list-style-type: none;
+    color: #a3a3a3;
+    min-height: 1em;
+}
+li:hover{
+    background-color: #fff;
+}
+em {
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #333;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #FF0D51;
+    text-align: center;
+}
+
+.delete, 
+.add,
+.edit,
+.update {
+    color: #FFF;
+    float: right;
+    padding: .6em 1em;
+}
+.add,
+.update {
+    background-color: #80A8A8;
+    margin-top: 15px;
+}
+.add:hover,
+.update:hover {
+    background-color: #a8c4c4;
+    color: #334b4b;
+}
+
+.edit {
+    background: #A88C8C;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.delete {
+    background-color: #fff;
+    color: #FF0D51;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.edit:hover{
+    background: #926f6f;
+}
+
+label {
+    color: white;
+}

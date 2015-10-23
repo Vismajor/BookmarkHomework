@@ -1,0 +1,7 @@
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li>
+      <a href="/bookmarks/genres/list"> <%= bookmark.genre %></a>
+    </li>
+  <% end %>
+</ul>

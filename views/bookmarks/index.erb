@@ -1,0 +1,22 @@
+<ul>
+  <% if @bookmarks %>
+    <% @bookmarks.each do |bookmark| %>
+      <li>
+        
+        <%= bookmark.name %>
+
+        <form method="post" action="/bookmarks/<%= bookmark.id %>/delete">
+        <button>DELETE</button>
+        </form>
+        <a href="/bookmarks/<%= bookmark.id %>/edit">edit</a>
+      </li>
+    <% end %>
+  <% end %>
+  <%= @test %>
+</ul>
+
+<form method="get" action='/bookmarks'> 
+
+<label for='search'>Search by genre:</label><input id='name' name='search' type='text'>
+
+</form>
