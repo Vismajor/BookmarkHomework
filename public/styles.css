@@ -1,5 +1,6 @@
 body {
     background-color: #dedede;
+    background-image: url("paper.gif");
     font-family: sans-serif;
     padding: 0;
     margin: 0;
@@ -11,13 +12,22 @@ body {
     width: 100%;
 }
 h1{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
     color: #fff;
-    position: absolute;
     left: 10px;
     top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 h2{
-    color: #80A8A8;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    color: #fff;
+    left: 10px;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 form {
     width: 100%;
@@ -42,12 +52,19 @@ label {
     display: block;
     text-align: left;
     font-size: .9em;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 40px;
 }
 
 input {
+    position: relative;
     margin-right: 10px;
+    padding-left: 60px;
     padding: 10px;
-    width: 85%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
@@ -133,4 +150,13 @@ a {
 
 label {
     color: white;
+    position: relative;
+    max-width: 48em;
+    margin: 0 auto;
+    padding: 0;
 }
+
+new {
+
+}
+

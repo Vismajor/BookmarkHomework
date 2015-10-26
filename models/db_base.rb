@@ -37,9 +37,12 @@ class DBBase
     end
     result
   end
+  
+  def self.all(conditions={})
+    where = conditions.map { |attribute, value| "#{attribute} = #{sql_sanitize(value, get_attributes[attribute])}" }.join(' AND ')
+    where = "WHERE #{where}" unless where.empty?
 
-  def self.all
-    results = run_sql("SELECT * FROM #{table_name}")
+    results = run_sql("SELECT #{table_name}.* FROM #{table_name} #{where}")
     results.map { |result| self.new(result) }
   end
 

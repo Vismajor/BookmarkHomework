@@ -3,8 +3,8 @@ get '/bookmarks' do
   # We have user input in params[:search]
   # Use input to seacrh table 
 
-  if params[:genre]
-    @bookmarks = Bookmark.find_genre(params[:genre])
+  if params[:search]
+    @bookmarks = Bookmark.all(genre: params[:search])
   else
     @bookmarks = Bookmark.all
   end
